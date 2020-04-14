@@ -9,23 +9,23 @@ Anti CSRF Handling
 <body bgcolor="#ffffff">
 <h1>Anti CSRF Tokens</h1>
 <p>
-Anti CSRF tokens are (pseudo) random parameters used to protect against Cross Site Request Forgery (CSRF) attacks.<br>
-However they also make a penetration testers job harder, especially if the tokens are regenerated every time a form is requested.<br>
+Anti CSRF Token sind (pseudo-)zufällige Parameter, die genutzt werden, um sich gegen Cross Site Request Forgery (CSRF) Angriffe zu schützen.<br>
+Jedoch erschweren sie die Tätigkeit des Penetrationstest, insbesondere, weil sie nach jedem neuen Form-Aufruf neu generiert werden.
+<br>
 </p>
 <p>
-ZAP detects anti CSRF tokens purely by attribute names - the list of attribute names considered to be anti CSRF tokens
-is configured using the <a href="../../ui/dialogs/options/anticsrf.html">Options Anti CSRF screen</a>.<br/>
-When ZAP detects these tokens it records the token value and which URL generated the token.<br/>
-Other scanners, like <a href="ascan.html">active scanner</a>, have options which
-cause ZAP to automatically regenerate the tokens when required.
+ZAP erfasst Anti-CSRF-Token rein anhand der Attributbezeichner - die Liste der Attributbezeichner, die als Anti-CSRF-Token interpretiert werden, kann über den <a href="../../ui/dialogs/options/anticsrf.html">Options Anti CSRF screen</a> konfiguriert werden.
+Sobals ZAP diese Token erfasst, wird der Wert des Tokens und die tokenerzeugende URL gesichert.
+<br/>
+Andere Scanner, wie <a href="ascan.html">active scanner</a> weisen Optionen auf, bei denen ZAP die Token automatisch wiederherstellt, falls dies nötig ist.
 </p>
 
-<h2>See also</h2>
+<h2>Siehe auch</h2>
 <table>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
-<a href="../../ui/overview.html">UI Overview</a></td><td>for an overview of the user interface</td></tr>
+<a href="../../ui/overview.html">UI Üverblick</a></td><td>für einen Überblick über das user interface</td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
-<a href="concepts.html">Features</a></td><td>provided by ZAP</td></tr>
+<a href="concepts.html">Features</a></td><td>bereitgestellt von ZAP</td></tr>
 </table>
 
 </body>
